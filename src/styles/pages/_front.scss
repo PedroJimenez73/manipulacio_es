@@ -1,0 +1,26 @@
+.front {
+    width: 100%;
+    height: calc(100vh - 140px);
+    background-image: url('src/assets/img/portada.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    @include flex(center, center);
+
+    // .title {
+    //     background-color: $brand-color-80;
+    //     padding: 1.5em;
+
+    //     p {
+    //         font-family: $titles-font;
+    //         font-size: 3em;
+    //         color: white;
+    //         padding: 0;
+    //     }
+    // }
+}
+
+@media (max-width: $small-device) {
+    .title {
+        transform: none;
+    }
+}

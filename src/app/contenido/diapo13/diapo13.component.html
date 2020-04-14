@@ -1,0 +1,49 @@
+<div class="contenedor condicional">
+    <div class="row">
+        <div class="col-100">
+            <p>Quins sectors de la població són més sensibles a patir infeccions?</p>
+            <p class="instructions">Fes clic a cada imatge per veure tota la informació</p>
+            <div class="flexy">
+                <div class="flip-card" (click)="flip(1)">
+                    <div class="front-card">
+                        <img src="assets/flip1.png">
+                        <p class="orange-text">
+                            INFANTS 
+                        </p>
+                    </div>
+                    <div class="back-card">
+                        <p>Ja que tenen el sistema immunitari immadur i no està preparat per aquestes infeccions</p>
+                    </div>
+                </div>                               
+                <div class="flip-card" (click)="flip(2)">
+                    <div class="front-card">
+                        <img src="assets/flip2.jpg">
+                        <p class="orange-text">
+                            AVIS
+                        </p>
+                    </div >
+                    <div class="back-card">
+                        <p>Perquè el seu sistema immunitari ja està deteriorat i solen tenir la salut més delicada.</p>
+                    </div>
+                </div>
+                <div class="flip-card" (click)="flip(3)">
+                    <div class="front-card">
+                        <img src="assets/flip3.jpg">
+                        <p class="orange-text">
+                            MALALTS 
+                        </p>
+                    </div >
+                    <div class="back-card">
+                        <p>O persones amb patologies associades: la medicació s'absorbeix al budell prim, per tant, en cas de diarrea o vòmits aquesta medicació és eliminada de l’organisme sense absorbir-se. Això pot ser greu en casos com l’epilèpsia, diabetis, cardiopaties, etc... ja que al no tenir l’efecte del fàrmac, pot desencadenar en situacions que posin en risc la vida de la persona. Per exemple, una persona amb epilèpsia al no fer-li efecte el fàrmac pot convulsionar i entrar en un coma epilèptic que pot ser irreversible.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row" style="justify-content: center; align-items: center;">
+        <img style="width: 300px" src="assets/kids.png" alt="">
+        <div class="arrow_box">
+            <p style="color: white">Cal tenir mes precaució amb les <br>poblacions de risc !!</p>
+        </div>
+    </div>
+</div>
