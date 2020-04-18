@@ -27,7 +27,7 @@ export class Diapo36Component implements OnInit {
     constructor(private scormStoreService: ScormStoreService) { }
 
     ngOnInit() {
-        for (let i = 7; i < 10; i ++) {
+        for (let i = 7; i < 9; i ++) {
             this.results.push(this.scormStoreService.getResults()[i].result)
         }
         this.results.forEach(elem => {

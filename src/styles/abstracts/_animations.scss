@@ -60,3 +60,21 @@
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
+
+.fade-siete {
+    opacity: 0;
+    animation-name: fade;
+    animation-duration: 300ms;
+    animation-delay: 7s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.fade-ocho {
+    opacity: 0;
+    animation-name: fade;
+    animation-duration: 300ms;
+    animation-delay: 7s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}

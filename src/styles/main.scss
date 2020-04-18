@@ -20,6 +20,7 @@
 @import 'components/questions';
 @import 'components/quote';
 @import 'components/spinner';
+@import 'components/timeline';
 @import 'components/tables';
 
 @import 'layout/footer';
@@ -292,9 +293,42 @@ p.tia .resto {
     background-repeat: no-repeat;
     background-position: 95% 50%;
 }
+
 .bio {
     background-image: url("src/assets/virus.svg");
     background-size: 15%;
     background-repeat: no-repeat;
     background-position: 95% 50%;
+}
+
+.conserves {
+    background-image: url("src/assets/AMPANS_67.jpg");
+    background-size: 20%;
+    background-repeat: no-repeat;
+    background-position: 95% 50%;
+    height: 200px;
+}
+
+.fruita {
+    background-image: url("src/assets/AMPANS_68.jpg");
+    background-size: 20%;
+    background-repeat: no-repeat;
+    background-position: 95% 50%;
+    height: 200px;
+}
+
+.peix {
+    background-image: url("src/assets/AMPANS_69.jpg");
+    background-size: 20%;
+    background-repeat: no-repeat;
+    background-position: 95% 50%;
+    height: 200px;
+}
+
+.productes {
+    background-image: url("src/assets/AMPANS_70.jpg");
+    background-size: 20%;
+    background-repeat: no-repeat;
+    background-position: 95% 50%;
+    height: 200px;
 }

@@ -1,4 +1,4 @@
-<div class="contenedor condicional">
+<div appScroll class="contenedor condicional">
     <div class="row">
         <div class="col-100">
             <div class="actividades mostrada">
@@ -22,15 +22,6 @@
                                 <p>PREGUNTA 9</p>
                                 <p *ngIf="results[1]">Correcta </p>
                                 <p *ngIf="!results[1]">Incorrecta </p>
-                            </div>
-                        </div>
-                        <div class="resultado">
-                            <span *ngIf="results[2]"><img src="assets/img/iconos/check-circle.svg"></span>
-                            <span *ngIf="!results[2]"><img src="assets/img/iconos/x-circle.svg"></span>
-                            <div>
-                                <p>PREGUNTA 10</p>
-                                <p *ngIf="results[2]">Correcta </p>
-                                <p *ngIf="!results[2]">Incorrecta </p>
                             </div>
                         </div>
                     </div>

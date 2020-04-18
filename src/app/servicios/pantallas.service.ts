@@ -32,10 +32,8 @@ import { Diapo28Component } from '../contenido/diapo28/diapo28.component';
 import { Diapo29Component } from '../contenido/diapo29/diapo29.component';
 import { Diapo30Component } from '../contenido/diapo30/diapo30.component';
 import { Diapo31Component } from '../contenido/diapo31/diapo31.component';
-import { Diapo32Component } from '../contenido/diapo32/diapo32.component';
 import { Diapo33Component } from '../contenido/diapo33/diapo33.component';
 import { Diapo34Component } from '../contenido/diapo34/diapo34.component';
-import { Diapo35Component } from '../contenido/diapo35/diapo35.component';
 import { Diapo36Component } from '../contenido/diapo36/diapo36.component';
 import { Diapo37Component } from '../contenido/diapo37/diapo37.component';
 import { Diapo38Component } from '../contenido/diapo38/diapo38.component';
@@ -62,6 +60,39 @@ import { Diapo58Component } from '../contenido/diapo58/diapo58.component';
 import { Diapo59Component } from '../contenido/diapo59/diapo59.component';
 import { Diapo60Component } from '../contenido/diapo60/diapo60.component';
 import { Diapo61Component } from '../contenido/diapo61/diapo61.component';
+import { Diapo27bisComponent } from '../contenido/diapo27bis/diapo27bis.component';
+import { DiapoS6P1Component } from '../contenido/diapo-s6-p1/diapo-s6-p1.component';
+import { DiapoS6P2Component } from '../contenido/diapo-s6-p2/diapo-s6-p2.component';
+import { DiapoS6P3Component } from '../contenido/diapo-s6-p3/diapo-s6-p3.component';
+import { DiapoS6P4Component } from '../contenido/diapo-s6-p4/diapo-s6-p4.component';
+import { DiapoS6P5Component } from '../contenido/diapo-s6-p5/diapo-s6-p5.component';
+import { DiapoS6P6Component } from '../contenido/diapo-s6-p6/diapo-s6-p6.component';
+import { DiapoS6P7Component } from '../contenido/diapo-s6-p7/diapo-s6-p7.component';
+import { DiapoS7P1Component } from '../contenido/diapo-s7-p1/diapo-s7-p1.component';
+import { DiapoS7P2Component } from '../contenido/diapo-s7-p2/diapo-s7-p2.component';
+import { DiapoS7P3Component } from '../contenido/diapo-s7-p3/diapo-s7-p3.component';
+import { DiapoS7P4Component } from '../contenido/diapo-s7-p4/diapo-s7-p4.component';
+import { DiapoS7P5Component } from '../contenido/diapo-s7-p5/diapo-s7-p5.component';
+import { DiapoS7P6Component } from '../contenido/diapo-s7-p6/diapo-s7-p6.component';
+import { DiapoS7P7Component } from '../contenido/diapo-s7-p7/diapo-s7-p7.component';
+import { DiapoS7P8Component } from '../contenido/diapo-s7-p8/diapo-s7-p8.component';
+import { DiapoS7P9Component } from '../contenido/diapo-s7-p9/diapo-s7-p9.component';
+import { DiapoS7P10Component } from '../contenido/diapo-s7-p10/diapo-s7-p10.component';
+import { DiapoS7P11Component } from '../contenido/diapo-s7-p11/diapo-s7-p11.component';
+import { DiapoS8P1Component } from '../contenido/diapo-s8-p1/diapo-s8-p1.component';
+import { DiapoS8P2Component } from '../contenido/diapo-s8-p2/diapo-s8-p2.component';
+import { DiapoS8P3Component } from '../contenido/diapo-s8-p3/diapo-s8-p3.component';
+import { DiapoS8P4Component } from '../contenido/diapo-s8-p4/diapo-s8-p4.component';
+import { DiapoS8P5Component } from '../contenido/diapo-s8-p5/diapo-s8-p5.component';
+import { DiapoS8P6Component } from '../contenido/diapo-s8-p6/diapo-s8-p6.component';
+import { DiapoS8P7Component } from '../contenido/diapo-s8-p7/diapo-s8-p7.component';
+import { DiapoS8P8Component } from '../contenido/diapo-s8-p8/diapo-s8-p8.component';
+import { DiapoS8P9Component } from '../contenido/diapo-s8-p9/diapo-s8-p9.component';
+import { DiapoS8P10Component } from '../contenido/diapo-s8-p10/diapo-s8-p10.component';
+import { DiapoS8P11Component } from '../contenido/diapo-s8-p11/diapo-s8-p11.component';
+import { DiapoS8P14Component } from '../contenido/diapo-s8-p14/diapo-s8-p14.component';
+import { DiapoS8P12Component } from '../contenido/diapo-s8-p12/diapo-s8-p12.component';
+import { DiapoS8P13Component } from '../contenido/diapo-s8-p13/diapo-s8-p13.component';
 
 @Injectable({
   providedIn: 'root'
@@ -98,14 +129,13 @@ export class PantallasService {
         new Pantalla(Diapo25Component, {}),
         new Pantalla(Diapo26Component, {}),
         new Pantalla(Diapo27Component, {}),
+        new Pantalla(Diapo27bisComponent, {}),
         new Pantalla(Diapo28Component, {}),
         new Pantalla(Diapo29Component, {}),
         new Pantalla(Diapo30Component, {}),
         new Pantalla(Diapo31Component, {}),
-        new Pantalla(Diapo32Component, {}),
         new Pantalla(Diapo33Component, {}),
         new Pantalla(Diapo34Component, {}),
-        new Pantalla(Diapo35Component, {}),
         new Pantalla(Diapo36Component, {}),
         new Pantalla(Diapo37Component, {}),
         new Pantalla(Diapo38Component, {}),
@@ -132,6 +162,38 @@ export class PantallasService {
         new Pantalla(Diapo59Component, {}),
         new Pantalla(Diapo60Component, {}),
         new Pantalla(Diapo61Component, {}),
+        new Pantalla(DiapoS6P1Component, {}),
+        new Pantalla(DiapoS6P2Component, {}),
+        new Pantalla(DiapoS6P3Component, {}),
+        new Pantalla(DiapoS6P4Component, {}),
+        new Pantalla(DiapoS6P5Component, {}),
+        new Pantalla(DiapoS6P6Component, {}),
+        new Pantalla(DiapoS6P7Component, {}),
+        new Pantalla(DiapoS7P1Component, {}),
+        new Pantalla(DiapoS7P2Component, {}),
+        new Pantalla(DiapoS7P3Component, {}),
+        new Pantalla(DiapoS7P4Component, {}),
+        new Pantalla(DiapoS7P5Component, {}),
+        new Pantalla(DiapoS7P6Component, {}),
+        new Pantalla(DiapoS7P7Component, {}),
+        new Pantalla(DiapoS7P8Component, {}),
+        new Pantalla(DiapoS7P9Component, {}),
+        new Pantalla(DiapoS7P10Component, {}),
+        new Pantalla(DiapoS7P11Component, {}),
+        new Pantalla(DiapoS8P1Component, {}),
+        new Pantalla(DiapoS8P2Component, {}),
+        new Pantalla(DiapoS8P3Component, {}),
+        new Pantalla(DiapoS8P4Component, {}),
+        new Pantalla(DiapoS8P5Component, {}),
+        new Pantalla(DiapoS8P6Component, {}),
+        new Pantalla(DiapoS8P7Component, {}),
+        new Pantalla(DiapoS8P8Component, {}),
+        new Pantalla(DiapoS8P9Component, {}),
+        new Pantalla(DiapoS8P10Component, {}),
+        new Pantalla(DiapoS8P11Component, {}),
+        new Pantalla(DiapoS8P12Component, {}),
+        new Pantalla(DiapoS8P13Component, {}),
+        new Pantalla(DiapoS8P14Component, {}),
     ];
 
     constructor() { }

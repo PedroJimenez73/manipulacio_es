@@ -1,17 +1,17 @@
-<div class="contenedor condicional">
+<div appScroll class="contenedor condicional">
     <div class="row">
         <div class="col-100">
             <div class="tab">
                 <div class="tabs">
-                    <div class="check" (click)="showTab(0)">
+                    <div class="check" (click)="showTab(0)" [style.height.px]="height">
                         <p>On es troba?</p>
                     </div>
-                    <div (click)="showTab(1)">
+                    <div (click)="showTab(1)" [style.height.px]="height">
                         <p>Quins són els seus símptomes?</p>
                     </div>
                 </div>
                 <div class="content-tabs">
-                    <div class="show visible">
+                    <div class="show visible" #contentsRef>
                         <section class="col-50">
                             <p>Aquesta bactèria es troba als intestins d’homes i animals, per això sol ser indicador de contaminació fecal. Es troba a  aliments contaminats amb matèria fecal d’animals portadors, en general s’associa a: carns picades (hamburgueses, choriços, etc.) mal cuinades, a sucs de fruita no pasteurizats contaminats (fruita collida de terra que ha tocat excrements d’animals o a l’arbre mateix), a verdura i hortalises regades amb aigua contaminada.</p>
                         </section> 
@@ -19,7 +19,7 @@
                             <img style="margin: 1rem;" src="assets/AMPANS_39.jpg" alt="">
                         </section>
                     </div>
-                    <div class="show">
+                    <div class="show" #contentsRef>
                         <section class="col-50">
                             <ul style="padding-left: 2rem;">
                                 <li>Dolor abdominal i diarrea aquosa al principi (hi pot haver presència de sang).</li>

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChildren, QueryList, ElementRef, ChangeDetectorRef } from '@angular/core';
 
 declare var $: any;
 
@@ -9,12 +9,30 @@ declare var $: any;
 })
 export class Diapo49Component implements OnInit {
 
-    constructor() { }
+    height;
+    @ViewChildren('contentsRef') contentsRef: QueryList<ElementRef>;
+    heightsRef = [];
+    
+    constructor(private cd: ChangeDetectorRef) { 
 
-    ngOnInit() {
     }
 
-      showTab(e) {
+    ngOnInit() {
+        setTimeout(() => {
+            this.setHeight();
+        }, 300);
+    }
+
+    setHeight() {
+        this.cd.detectChanges();
+        this.contentsRef.forEach(elem => {
+            this.heightsRef.push(elem.nativeElement.offsetHeight);
+        })
+        this.height = Math.max.apply(null, this.heightsRef) / this.heightsRef.length;
+        $(".tab").eq(0).addClass("show");
+    }
+
+    showTab(e) {
         for (let i=0; i < 3; i++) {
             if(e === i) {
                 $(".content-tabs div").eq(i).addClass("show");

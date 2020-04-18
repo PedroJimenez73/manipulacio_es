@@ -1,17 +1,17 @@
-<div class="contenedor condicional">
+<div appScroll class="contenedor condicional">
     <div class="row">
         <div class="col-100">
             <div class="tab">
                 <div class="tabs">
-                    <div style="height: 250px" class="check" (click)="showTab(0)">
+                    <div style="height: 250px" class="check" (click)="showTab(0)" [style.height.px]="height">
                         <p>On es troba?</p>
                     </div>
-                    <div style="height: 250px" (click)="showTab(1)">
+                    <div style="height: 250px" (click)="showTab(1)" [style.height.px]="height">
                         <p>Com el podem evitar?</p>
                     </div>
                 </div>
                 <div class="content-tabs">
-                    <div class="show visible">
+                    <div class="show visible" #contentsRef>
                         <section class="col-50">
                             <p>No és un microorganisme, és un <b>paràsit</b> (s’observa a simple vista, és un cuc petit ). Es troba al peix i en els cefalòpodes (calamar, pop, sípia…) i pot provocar alteracions digestives i reaccions al·lèrgiques que, en ocasions, poden ser greus.</p>
                             <p>Però només és perillós si es consumeix cru. Un cop cuinat es destrueix del tot.</p>
@@ -20,7 +20,7 @@
                             <img style="margin: 1rem;" src="assets/AMPANS_53.jpg" alt="">
                         </section>
                     </div>
-                    <div class="show">
+                    <div class="show" #contentsRef>
                         <section class="col-50">
                             <p>Què cal fer si volem consumir el peix cru:</p>
                             <ul style="padding-left: 2rem;">

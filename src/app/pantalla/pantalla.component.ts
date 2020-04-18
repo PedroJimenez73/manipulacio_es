@@ -47,4 +47,6 @@ export class PantallaComponent implements OnInit {
     (componentRef.instance).data = pantalla.data;
   }
 
+
+
 }

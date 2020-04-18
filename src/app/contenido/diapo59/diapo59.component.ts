@@ -24,7 +24,7 @@ export class Diapo59Component implements OnInit {
     elementosInputsRef = [];
 
     pregunta = {
-        id: '13',
+        id: '12',
         question: 'Quan descongelem un aliment:',
         answers: [
             'No es pot tornar a congelar a no ser que el cuinem primer.',

@@ -24,7 +24,7 @@ export class Diapo58Component implements OnInit {
     elementosInputsRef = [];
 
     pregunta = {
-        id: '12',
+        id: '11',
         question: 'Quin són els aliments més sensibles a produir T.I.A:',
         answers: [
             'Carns d’aus i de caça.',

@@ -22,7 +22,7 @@ export class Diapo1Component implements OnInit {
 
     ngOnInit() {
         this.subscripMenu = this.scormStoreService.state$
-                                    .subscribe(
+                                .subscribe(
                                     (data: any) => {
                                         this.menu = data.menu.filter(elem => elem.menu === true);
                                         let progress = data.progress;
@@ -37,6 +37,5 @@ export class Diapo1Component implements OnInit {
     navTo(e) {
         this.scormStoreService.navTo(e);
     }
-
 
 }

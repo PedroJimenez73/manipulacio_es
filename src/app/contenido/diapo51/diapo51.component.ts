@@ -25,7 +25,7 @@ export class Diapo51Component implements OnInit {
     elementosInputsRef = [];
 
     pregunta = {
-        id: '11',
+        id: '10',
         question: 'Quin bacteri es troba freqüentment en la boca i nas del manipulador d’aliments?',
         answers: [
             'Staphylococcus Aureus',

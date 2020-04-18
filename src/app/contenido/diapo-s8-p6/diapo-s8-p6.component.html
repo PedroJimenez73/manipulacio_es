@@ -1,0 +1,43 @@
+<div appScroll class="contenedor condicional">
+    <div class="row">
+        <div class="col-100">
+            <p>Quan ens hem de rentar les mans?</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-100">
+            <div class="tab">
+                <div class="tabs">
+                    <div class="check" (click)="showTab(0)" [style.height.px]="height">
+                        <p>Abans de</p>
+                    </div>
+                    <div (click)="showTab(1)" [style.height.px]="height">
+                        <p>Després de</p>
+                    </div>
+                </div>
+                <div class="content-tabs">
+                    <div class="show visible" #contentsRef>
+                        <section class="col-100">
+                            <ul>
+                                <li>Inici jornada laboral.</li>
+                                <li>Manipular aliments (crus, cuits).</li>
+                                <li>Preparació aliments.</li>
+                            </ul>
+                        </section> 
+                    </div>
+                    <div class="show" #contentsRef>
+                        <section class="col-100">
+                            <ul>
+                                <li>Anar al wàter.</li>
+                                <li>Contacte amb escombraries.</li>
+                                <li>Mocar-se, estossegar, mocador.</li>
+                                <li>Contacte amb aliments crus.</li>
+                                <li>Qualsevol interrupció en el treball si estem manipulant aliments.</li>
+                            </ul>
+                        </section> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

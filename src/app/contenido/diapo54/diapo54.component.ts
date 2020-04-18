@@ -12,4 +12,5 @@ export class Diapo54Component implements OnInit {
   ngOnInit() {
   }
 
+
 }

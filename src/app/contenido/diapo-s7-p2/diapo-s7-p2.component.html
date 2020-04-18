@@ -1,0 +1,65 @@
+<div appScroll class="contenedor condicional">
+    <div class="row">
+        <div class="col-100">
+            <div class="cita">
+                <p>
+                </p>
+                <p style="text-align: center;">La recepció de mercaderies és la zona més contaminada: contaminació d’origen.</p>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-100"></div>
+    </div>
+    <div class="row">
+        <div class="col-100">
+            <div class="tab">
+                <div class="tabs">
+                    <div class="check" (click)="showTab(0)" [style.height.px]="height">
+                        <p>Aliments que no necessiten fred.</p>
+                    </div>
+                    <div (click)="showTab(1)" [style.height.px]="height">
+                        <p>Quins són els seus símptomes?</p>
+                    </div>
+                </div>
+                <div class="content-tabs">
+                    <div class="show visible" #contentsRef>
+                        <section class="col-50">
+                            <p>Parlem de conserves, llegums, farines...</p>
+                            <ul>
+                                <li><b>Mai al terra</b> ni tocant la paret de darrera ➡︎ Circulació de l’aire</li>
+                                <li><b>S’han d’ordenar segons tipus</b>: carn, làctics, ous, fruita i verdura.</li>
+                                <li><b>Separar productes de neteja dels aliments</b> en magatzems diferents   ➡︎         tòxics </li>  
+                                <li><b>Treure l'embalatge del transport</b></li>
+                                <li><b>Tots els productes han de estar identificats</b>:
+                                    <ul>
+                                        <li><b>Envasats</b>: apuntar el dia d’obertura.</li>
+                                        <li><b>Fresc</b>: identificar el dia d’arribada.</li>
+                                        <li><b>Frescs congelat</b>: identificar el dia de congelació.</li>
+                                    </ul>
+                                </li>
+                                <li><b>S’han de protegir o tapar</b>.</li>
+                            </ul>
+                        </section> 
+                        <section class="col-50">
+                            <img style="margin: 1rem;" src="assets/AMPANS_65.jpg" alt="">
+                        </section>
+                    </div>
+                    <div class="show" #contentsRef>
+                        <section class="col-50">
+                            <ul>
+                                <li>S’han de <b>separar els crus dels cuinats!</b></li>
+                                <li><b>No sobrepassar la capacitat del frigorífic</b></li>
+                                <li><b>Seguir sempre el sistema “p.e.p.s.”=</b> primer surt el que primer entra.</li>  
+                                <li><b>Comprovar sempre les tº de neveres i congeladors</b>.</li>
+                            </ul>
+                        </section> 
+                        <section class="col-50">
+                            <img style="margin: 1rem;" src="assets/AMPANS_66.jpg" alt="">
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
