@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { Diapo61Component } from './diapo61.component';
+import { DiapoS10P2Component } from './diapo-s10-p2.component';
 
-describe('Diapo61Component', () => {
-  let component: Diapo61Component;
-  let fixture: ComponentFixture<Diapo61Component>;
+describe('DiapoS10P2Component', () => {
+  let component: DiapoS10P2Component;
+  let fixture: ComponentFixture<DiapoS10P2Component>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ Diapo61Component ]
+      declarations: [ DiapoS10P2Component ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(Diapo61Component);
+    fixture = TestBed.createComponent(DiapoS10P2Component);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

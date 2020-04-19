@@ -59,7 +59,6 @@ import { Diapo57Component } from '../contenido/diapo57/diapo57.component';
 import { Diapo58Component } from '../contenido/diapo58/diapo58.component';
 import { Diapo59Component } from '../contenido/diapo59/diapo59.component';
 import { Diapo60Component } from '../contenido/diapo60/diapo60.component';
-import { Diapo61Component } from '../contenido/diapo61/diapo61.component';
 import { Diapo27bisComponent } from '../contenido/diapo27bis/diapo27bis.component';
 import { DiapoS6P1Component } from '../contenido/diapo-s6-p1/diapo-s6-p1.component';
 import { DiapoS6P2Component } from '../contenido/diapo-s6-p2/diapo-s6-p2.component';
@@ -93,6 +92,23 @@ import { DiapoS8P11Component } from '../contenido/diapo-s8-p11/diapo-s8-p11.comp
 import { DiapoS8P14Component } from '../contenido/diapo-s8-p14/diapo-s8-p14.component';
 import { DiapoS8P12Component } from '../contenido/diapo-s8-p12/diapo-s8-p12.component';
 import { DiapoS8P13Component } from '../contenido/diapo-s8-p13/diapo-s8-p13.component';
+import { DiapoS9P1Component } from '../contenido/diapo-s9-p1/diapo-s9-p1.component';
+import { DiapoS9P2Component } from '../contenido/diapo-s9-p2/diapo-s9-p2.component';
+import { DiapoS9P3Component } from '../contenido/diapo-s9-p3/diapo-s9-p3.component';
+import { DiapoS9P4Component } from '../contenido/diapo-s9-p4/diapo-s9-p4.component';
+import { DiapoS9P5Component } from '../contenido/diapo-s9-p5/diapo-s9-p5.component';
+import { DiapoS9P6Component } from '../contenido/diapo-s9-p6/diapo-s9-p6.component';
+import { DiapoS9P7Component } from '../contenido/diapo-s9-p7/diapo-s9-p7.component';
+import { DiapoS9P9Component } from '../contenido/diapo-s9-p9/diapo-s9-p9.component';
+import { DiapoS9P10Component } from '../contenido/diapo-s9-p10/diapo-s9-p10.component';
+import { DiapoS9P11Component } from '../contenido/diapo-s9-p11/diapo-s9-p11.component';
+import { DiapoS9P12Component } from '../contenido/diapo-s9-p12/diapo-s9-p12.component';
+import { DiapoS9P13Component } from '../contenido/diapo-s9-p13/diapo-s9-p13.component';
+import { DiapoS9P14Component } from '../contenido/diapo-s9-p14/diapo-s9-p14.component';
+import { DiapoS9P8Component } from '../contenido/diapo-s9-p8/diapo-s9-p8.component';
+import { DiapoS10P1Component } from '../contenido/diapo-s10-p1/diapo-s10-p1.component';
+import { DiapoS10P2Component } from '../contenido/diapo-s10-p2/diapo-s10-p2.component';
+import { DiapoResEvalComponent } from '../contenido/diapo-res-eval/diapo-res-eval.component';
 
 @Injectable({
   providedIn: 'root'
@@ -161,7 +177,6 @@ export class PantallasService {
         new Pantalla(Diapo58Component, {}),
         new Pantalla(Diapo59Component, {}),
         new Pantalla(Diapo60Component, {}),
-        new Pantalla(Diapo61Component, {}),
         new Pantalla(DiapoS6P1Component, {}),
         new Pantalla(DiapoS6P2Component, {}),
         new Pantalla(DiapoS6P3Component, {}),
@@ -194,6 +209,23 @@ export class PantallasService {
         new Pantalla(DiapoS8P12Component, {}),
         new Pantalla(DiapoS8P13Component, {}),
         new Pantalla(DiapoS8P14Component, {}),
+        new Pantalla(DiapoS9P1Component, {}),
+        new Pantalla(DiapoS9P2Component, {}),
+        new Pantalla(DiapoS9P3Component, {}),
+        new Pantalla(DiapoS9P4Component, {}),
+        new Pantalla(DiapoS9P5Component, {}),
+        new Pantalla(DiapoS9P6Component, {}),
+        new Pantalla(DiapoS9P7Component, {}),
+        new Pantalla(DiapoS9P8Component, {}),
+        new Pantalla(DiapoS9P9Component, {}),
+        new Pantalla(DiapoS9P10Component, {}),
+        new Pantalla(DiapoS9P11Component, {}),
+        new Pantalla(DiapoS9P12Component, {}),
+        new Pantalla(DiapoS9P13Component, {}),
+        new Pantalla(DiapoS9P14Component, {}),
+        new Pantalla(DiapoS10P1Component, {}),
+        new Pantalla(DiapoS10P2Component, {}),
+        new Pantalla(DiapoResEvalComponent, {}),
     ];
 
     constructor() { }

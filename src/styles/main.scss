@@ -159,6 +159,17 @@ ul {
   
 }
 
+ol {
+    margin-left: 40px;
+
+    li {
+        font-size: 1.2em;
+        line-height: 1.5;
+        margin: 20px 0;
+    }
+  
+}
+
 // TIA
 
 @keyframes on-resto {

@@ -1,1 +1,86 @@
-<p>diapo-s9-p12 works!</p>
+<div appScroll class="contenedor condicional">
+    <div class="row">
+        <div class="col-100">
+            <p>MALALTIA CELÍACA</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-100">
+            <p><b>Classificació dels aliments segons el seu contingut en gluten</b></p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-100">
+            <div class="tab">
+                <div class="tabs">
+                    <div style="height: 250px" class="check" (click)="showTab(0)" [style.height.px]="height">
+                        <p>Aliments que amb seguretat contenen gluten</p>
+                    </div>
+                    <div style="height: 250px" (click)="showTab(1)" [style.height.px]="height">
+                        <p>Aliments que poden contenir gluten</p>
+                    </div>
+                    <div style="height: 250px" (click)="showTab(2)" [style.height.px]="height">
+                        <p>Aliments que en tota seguretat no contenen gluten</p>
+                    </div>
+                </div>
+                <div class="content-tabs">
+                    <div class="show visible" #contentsRef>
+                        <section class="col-100">
+                            <ul>
+                                <li>Pa, farina de blat, ordi i sègol, cibada.  (Castellà: Trigo, cevada, centeno y avena)</li>
+                                <li>Bolleria i pastissos.</li>
+                                <li>Galetes, coques i productes de rebosteria.</li>
+                                <li>Pasta alimentària, fideus, macarrons, tallarines, etc.</li>
+                                <li>Begudes malteades.</li>
+                                <li>Begudes destil·lades o fermentades a partir de cereals, cervesa, whisky, licors</li>
+                                <li>Productes manufacturats que entre la seva composició i hagi les farines citades en qualsevol de les seves formes com midons, fècules, sèmoles, proteïnes etc.</li>
+                            </ul>
+                        </section> 
+                    </div>
+                    <div class="show" #contentsRef>
+                        <section class="col-100">
+                            <ul>
+                                <li>Embotits, chooped, bull blanc i negre, xoriç, botifarra negra, etc.</li>
+                                <li>Productes de xarcuteria.</li>
+                                <li>Formatge fos, de untar, formatges especials per pizzes.</li>
+                                <li>Patés.</li>
+                                <li>Conserves de carn: Pilotilles i hamburgueses.</li>
+                                <li>Conserves de peix en salsa o amb tomàquet fregit.</li>
+                                <li>Caramels i gominoles (xuxeries).</li>
+                                <li>Succedanis del cafè i altres begudes de màquina.</li>
+                                <li>Fruits secs torrats i/o fregits amb farina y sal.</li>
+                                <li>Alguns tipus de gelats.</li>
+                                <li>Succedanis de la xocolata.</li>
+                                <li>Salses, condiments i colorants alimentaris. </li>
+                            </ul>
+                        </section> 
+                    </div>
+                    <div class="show" #contentsRef>
+                        <section class="col-100">
+                            <ul>
+                                <li>Llet i derivats, formatges, mató, nata, iogurts naturals i de sabors, conserva al natural, cecina, pernil salat serrà i pernil dolç de qualitat extra.</li>
+                                <li>Peix fresc i congelats sense arrebossar, marisc fresc i peix i marisc en conserva al natural o amb oli.</li>
+                                <li>Ous.</li>
+                                <li>Verdures, hortalisses i tubercles.</li>
+                                <li>Fruites.</li>
+                                <li>Arròs, blat de moro i tapioca així com els seus derivats.</li>
+                                <li>Tot tipus de llegums.</li>
+                                <li>Sucre i mel.</li>
+                                <li>Olis i mantegues.</li>
+                                <li>Cafè en gra o molt, infusions o refresc de taronja, llimona i cola.</li>
+                                <li>Tota classe de vins i begudes espumoses.</li>
+                                <li>Fruits secs naturals.</li>
+                                <li>Sal, vinagre de vi, espècies en rama, en gra i totes naturals.</li>
+                            </ul>
+                        </section> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-100">
+            <img style="max-width: 30%; display: block; margin: 0 auto;" src="assets/esquema_9_4_4.png" alt="">
+        </div>
+    </div>
+</div>

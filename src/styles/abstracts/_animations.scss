@@ -74,7 +74,25 @@
     opacity: 0;
     animation-name: fade;
     animation-duration: 300ms;
-    animation-delay: 7s;
+    animation-delay: 8s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.fade-nueve {
+    opacity: 0;
+    animation-name: fade;
+    animation-duration: 300ms;
+    animation-delay: 9s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.fade-diez {
+    opacity: 0;
+    animation-name: fade;
+    animation-duration: 300ms;
+    animation-delay: 10s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }

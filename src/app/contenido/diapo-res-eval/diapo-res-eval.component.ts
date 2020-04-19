@@ -4,11 +4,11 @@ import { MultiDataSet, Label } from 'ng2-charts';
 import { ScormStoreService } from 'src/app/servicios/scorm-store.service';
 
 @Component({
-  selector: 'app-diapo61',
-  templateUrl: './diapo61.component.html',
-  styleUrls: ['./diapo61.component.scss']
+  selector: 'app-diapo-res-eval',
+  templateUrl: './diapo-res-eval.component.html',
+  styleUrls: ['./diapo-res-eval.component.scss']
 })
-export class Diapo61Component implements OnInit {
+export class DiapoResEvalComponent implements OnInit {
 
     results = [];
     totalAciertos = 0;
@@ -28,7 +28,7 @@ export class Diapo61Component implements OnInit {
     constructor(private scormStoreService: ScormStoreService) { }
 
     ngOnInit() {
-        for (let i = 0; i < 13; i ++) {
+        for (let i = 0; i < 17; i ++) {
             this.results.push(this.scormStoreService.getResults()[i].result)
         }
         this.results.forEach(elem => {
@@ -69,6 +69,5 @@ export class Diapo61Component implements OnInit {
     reset() {
         this.scormStoreService.reset();
     }
-
 
 }

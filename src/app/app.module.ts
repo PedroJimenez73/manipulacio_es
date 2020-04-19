@@ -69,7 +69,6 @@ import { Diapo57Component } from './contenido/diapo57/diapo57.component';
 import { Diapo58Component } from './contenido/diapo58/diapo58.component';
 import { Diapo59Component } from './contenido/diapo59/diapo59.component';
 import { Diapo60Component } from './contenido/diapo60/diapo60.component';
-import { Diapo61Component } from './contenido/diapo61/diapo61.component';
 import { Diapo27bisComponent } from './contenido/diapo27bis/diapo27bis.component';
 import { DiapoS6P1Component } from './contenido/diapo-s6-p1/diapo-s6-p1.component';
 import { DiapoS6P2Component } from './contenido/diapo-s6-p2/diapo-s6-p2.component';
@@ -118,6 +117,9 @@ import { DiapoS9P11Component } from './contenido/diapo-s9-p11/diapo-s9-p11.compo
 import { DiapoS9P12Component } from './contenido/diapo-s9-p12/diapo-s9-p12.component';
 import { DiapoS9P13Component } from './contenido/diapo-s9-p13/diapo-s9-p13.component';
 import { DiapoS9P14Component } from './contenido/diapo-s9-p14/diapo-s9-p14.component';
+import { DiapoS10P1Component } from './contenido/diapo-s10-p1/diapo-s10-p1.component';
+import { DiapoS10P2Component } from './contenido/diapo-s10-p2/diapo-s10-p2.component';
+import { DiapoResEvalComponent } from './contenido/diapo-res-eval/diapo-res-eval.component';
 
 @NgModule({
   declarations: [
@@ -186,7 +188,6 @@ import { DiapoS9P14Component } from './contenido/diapo-s9-p14/diapo-s9-p14.compo
     Diapo58Component,
     Diapo59Component,
     Diapo60Component,
-    Diapo61Component,
     Diapo27bisComponent,
     DiapoS6P1Component,
     DiapoS6P2Component,
@@ -235,6 +236,9 @@ import { DiapoS9P14Component } from './contenido/diapo-s9-p14/diapo-s9-p14.compo
     DiapoS9P12Component,
     DiapoS9P13Component,
     DiapoS9P14Component,
+    DiapoS10P1Component,
+    DiapoS10P2Component,
+    DiapoResEvalComponent,
   ],
   imports: [
     BrowserModule,
@@ -305,7 +309,6 @@ import { DiapoS9P14Component } from './contenido/diapo-s9-p14/diapo-s9-p14.compo
     Diapo58Component,
     Diapo59Component,
     Diapo60Component,
-    Diapo61Component,
     DiapoS6P1Component,
     DiapoS6P2Component,
     DiapoS6P3Component,
@@ -338,6 +341,23 @@ import { DiapoS9P14Component } from './contenido/diapo-s9-p14/diapo-s9-p14.compo
     DiapoS8P12Component,
     DiapoS8P13Component,
     DiapoS8P14Component,
+    DiapoS9P1Component,
+    DiapoS9P2Component,
+    DiapoS9P3Component,
+    DiapoS9P4Component,
+    DiapoS9P5Component,
+    DiapoS9P6Component,
+    DiapoS9P7Component,
+    DiapoS9P8Component,
+    DiapoS9P9Component,
+    DiapoS9P10Component,
+    DiapoS9P11Component,
+    DiapoS9P12Component,
+    DiapoS9P13Component,
+    DiapoS9P14Component,
+    DiapoS10P1Component,
+    DiapoS10P2Component,
+    DiapoResEvalComponent,
   ]
 })
 export class AppModule { }

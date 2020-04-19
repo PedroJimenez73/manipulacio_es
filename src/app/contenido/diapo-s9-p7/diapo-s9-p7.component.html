@@ -1,1 +1,31 @@
-<p>diapo-s9-p7 works!</p>
+<div appScroll class="contenedor condicional">
+    <div class="row">
+        <div class="col-100">
+            <div class="tab">
+                <div class="tabs">
+                    <div class="check" (click)="showTab(0)" [style.height.px]="height">
+                        <p>Definició</p>
+                    </div>
+                    <div (click)="showTab(1)" [style.height.px]="height">
+                        <p>Com realitzar el control diari de clor</p>
+                    </div>
+                </div>
+                <div class="content-tabs">
+                    <div class="show visible" #contentsRef>
+                        <section class="col-100">
+                            <p>Segons el Reial Decret 140/2003, és el control de clor residual lliure de totes les aigües utilitzades amb fins de fabricació, conservació o comercialització de productes alimentaris o substàncies destinades al consum humà així com les utilitzades en la neteja de superfícies.</p>
+                        </section> 
+                    </div>
+                    <div class="show" #contentsRef>
+                        <section class="col-100">
+                            <ol type="a">
+                                <li>És necessari disposar d’un kit de clor residual (Escala de fins a 2 ppm).</li>
+                                <li>En el moment de prendre la mostra cal deixar sortir una mica d’aigua (15-20’’) i prendre la mesura a l’inici de la jornada laboral. El clor és un agent que s’evapora fàcilment i per tant el moment ideal és realitzar la mesura a l’inici de la jornada laboral.</li>
+                            </ol>
+                        </section> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
