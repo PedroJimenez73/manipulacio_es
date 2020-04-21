@@ -120,6 +120,8 @@ import { DiapoS9P14Component } from './contenido/diapo-s9-p14/diapo-s9-p14.compo
 import { DiapoS10P1Component } from './contenido/diapo-s10-p1/diapo-s10-p1.component';
 import { DiapoS10P2Component } from './contenido/diapo-s10-p2/diapo-s10-p2.component';
 import { DiapoResEvalComponent } from './contenido/diapo-res-eval/diapo-res-eval.component';
+import { Diapo26bisComponent } from './contenido/diapo26bis/diapo26bis.component';
+import { Diapo32Component } from './contenido/diapo32/diapo32.component';
 
 @NgModule({
   declarations: [
@@ -239,6 +241,8 @@ import { DiapoResEvalComponent } from './contenido/diapo-res-eval/diapo-res-eval
     DiapoS10P1Component,
     DiapoS10P2Component,
     DiapoResEvalComponent,
+    Diapo26bisComponent,
+    Diapo32Component,
   ],
   imports: [
     BrowserModule,
@@ -276,12 +280,14 @@ import { DiapoResEvalComponent } from './contenido/diapo-res-eval/diapo-res-eval
     Diapo24Component,
     Diapo25Component,
     Diapo26Component,
+    Diapo26bisComponent,
     Diapo27Component,
     Diapo27bisComponent,
     Diapo28Component,
     Diapo29Component,
     Diapo30Component,
     Diapo31Component,
+    Diapo32Component,
     Diapo33Component,
     Diapo34Component,
     Diapo36Component,

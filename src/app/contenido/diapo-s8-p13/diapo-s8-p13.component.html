@@ -3,11 +3,12 @@
         <div class="col-100">
             <div class="actividades mostrada" id="actividad-1">
                 <h3>{{pregunta.id}} {{pregunta.question}}</h3>
+                <h3 *ngIf="pregunta.subquestion !== undefined"><i>{{pregunta.subquestion}}</i></h3>
                 <hr>
                 <form [formGroup]="form">
-                    <label #labelsRef class="respuesta" *ngFor="let answer of pregunta.answers; let i = index">
-                        <input #inputsRef class="m-r-small" type="radio" formControlName="answerRadio" value="{{abcAnswers[i]}}">
-                            {{abcAnswers[i]}}. {{answer}} 
+                    <label  #labelsRef class="respuesta" formArrayName="answers" *ngFor="let answer of form.controls.answers.controls; let i = index">
+                        <input #inputsRef class="m-r-small" type="checkbox" [formControlName]="i">
+                            {{abcAnswers[i]}}. {{pregunta.answers[i]}}
                             <img class="incorrecta" src="assets/img/iconos/x-circle.svg" alt="">
                             <img class="correcta" src="assets/img/iconos/check-circle.svg" alt="">
                     </label>

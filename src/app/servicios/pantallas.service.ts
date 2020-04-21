@@ -109,6 +109,8 @@ import { DiapoS9P8Component } from '../contenido/diapo-s9-p8/diapo-s9-p8.compone
 import { DiapoS10P1Component } from '../contenido/diapo-s10-p1/diapo-s10-p1.component';
 import { DiapoS10P2Component } from '../contenido/diapo-s10-p2/diapo-s10-p2.component';
 import { DiapoResEvalComponent } from '../contenido/diapo-res-eval/diapo-res-eval.component';
+import { Diapo26bisComponent } from '../contenido/diapo26bis/diapo26bis.component';
+import { Diapo32Component } from '../contenido/diapo32/diapo32.component';
 
 @Injectable({
   providedIn: 'root'
@@ -144,12 +146,14 @@ export class PantallasService {
         new Pantalla(Diapo24Component, {}),
         new Pantalla(Diapo25Component, {}),
         new Pantalla(Diapo26Component, {}),
+        new Pantalla(Diapo26bisComponent, {}),
         new Pantalla(Diapo27Component, {}),
         new Pantalla(Diapo27bisComponent, {}),
         new Pantalla(Diapo28Component, {}),
         new Pantalla(Diapo29Component, {}),
         new Pantalla(Diapo30Component, {}),
         new Pantalla(Diapo31Component, {}),
+        new Pantalla(Diapo32Component, {}),
         new Pantalla(Diapo33Component, {}),
         new Pantalla(Diapo34Component, {}),
         new Pantalla(Diapo36Component, {}),

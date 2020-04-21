@@ -25,7 +25,7 @@ export class Diapo34Component implements OnInit {
 
     pregunta = {
         id: '9',
-        question: 'La temperatura més perillós per afavorir la reproducció i creixement dels microorganismes és:',
+        question: 'La temperatura més perillosa per afavorir la reproducció i creixement dels microorganismes és:',
         answers: [
             'Entre 4 i 10º.',
             'Entre 10 i 60º.',

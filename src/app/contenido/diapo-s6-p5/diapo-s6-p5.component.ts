@@ -25,10 +25,10 @@ export class DiapoS6P5Component implements OnInit {
         id: '13',
         question: 'La contaminació creuada es produeix quan els agents contaminants passen d’un aliment a un altre a través de:',
         answers: [
-            'Utensilis, superfícies i mans brutes del manipulador',
-            'L’aire',
-            'Els insectes',
-            'Totes son correctes',
+            'Utensilis, superfícies i mans brutes del manipulador.',
+            'L’aire.',
+            'Els insectes.',
+            'Totes son correctes.',
         ],
         corrects: ['a']
     }

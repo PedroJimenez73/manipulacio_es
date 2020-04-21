@@ -1,5 +1,5 @@
 import { Component, OnInit, ViewChildren, QueryList, ElementRef, ChangeDetectorRef } from '@angular/core';
-import { FormGroup, FormBuilder } from '@angular/forms';
+import { FormGroup, FormBuilder, FormArray, FormControl } from '@angular/forms';
 import { ScormStoreService } from 'src/app/servicios/scorm-store.service';
 
 declare var $: any;
@@ -24,14 +24,20 @@ export class DiapoS8P13Component implements OnInit {
 
     pregunta = {
         id: '16',
-        question: 'A quina temperatura cal escalfar l’aliment per destruir la majoria de microorganismes?',
+        question: 'Indica quines indicacions del rentat de mans cal fer-les abans de:',
         answers: [
-            '65º o superior  a l’interior de l’aliment.',
-            'Quanta més temperatura arribi millor. A 100º seria el mínim.',
-            'Posar el forn a 200º una mitja hora.',
-            'Depèn de cada aliment.',
+            'anar al wàter',
+            'inici de la jornada laboral',
+            'contacte amb escombraries',
+            'mocar-se, tocar mocador',
+            'manipular aliments crus',
+            'manipulació d’aliments cuits',
+            'estossegar',
+            'contacte amb aliments crus',
+            'qualsevol interrupció en el treball si estem manipulant aliments',
+            'preparació d’aliments',
         ],
-        corrects: ['a']
+        corrects: ['','b','','','e','f','','','','j']
     }
 
     constructor(private ff: FormBuilder,
@@ -40,24 +46,36 @@ export class DiapoS8P13Component implements OnInit {
 
     ngOnInit() {
         this.form = this.ff.group({
-            answerRadio: ''
+            answers: new FormArray([])
+        });
+        this.pregunta.answers.forEach(elem => {
+            const control = new FormControl();
+            (this.form.controls.answers as FormArray).push(control);
         });
         if (this.scormStoreService.getAswersChecked(this.pregunta.id)) {
-            this.answersChecked = this.scormStoreService.getAswersChecked(this.pregunta.id)
-            this.form.get('answerRadio').patchValue(this.answersChecked[0],{emitEvent: false});
+            this.answersChecked = this.scormStoreService.getAswersChecked(this.pregunta.id);
+            (this.form.get("answers") as FormArray).patchValue(this.answersChecked);
             this.checkAnswer();
         }
     }
 
     checkAnswer() {
-        this.showMensaje = true;
-        this.lockInput = true;
-        this.answersChecked[0] = this.form.get('answerRadio').value;
-        if (this.answersChecked[0] === this.pregunta.corrects[0]) {
+        this.answersChecked = [];
+        this.form.value.answers.forEach((input,i) => {
+            if(input){
+                this.answersChecked.push(this.abcAnswers[i]);
+            } else {
+                this.answersChecked.push('');
+            }
+        });
+        if (String(this.answersChecked) === String(this.pregunta.corrects)) {
             this.result = true;
         } else {
             this.result = false;
         }
+        console.log(this.answersChecked, this.result, this.showMensaje);
+        this.showMensaje = true;
+        this.lockInput = true;
         this.cd.detectChanges();
         this.elementosInputsRef = [];
         this.inputsRef.forEach(elem => {
@@ -74,17 +92,17 @@ export class DiapoS8P13Component implements OnInit {
             elem.nativeElement.classList.remove('incorrecta');
             elem.nativeElement.classList.remove('correcta');
         });
-        let indexCorrecta = this.abcAnswers.indexOf(this.pregunta.corrects[0]);
-        let indexMarcada = this.abcAnswers.indexOf(this.answersChecked[0]);
-        if (indexCorrecta === indexMarcada) {
-            this.elementosLabelsRef[indexMarcada].nativeElement.classList.add('correcta');    
-        } else {
-            this.elementosLabelsRef[indexMarcada].nativeElement.classList.add('incorrecta');     
-        }
+        this.elementosLabelsRef.forEach((elem, i) => {
+          if (this.pregunta.corrects[i]) {
+            elem.nativeElement.classList.add('correcta');
+          } else if (this.pregunta.corrects[i] === '' && this.answersChecked[i] !== '') {
+            elem.nativeElement.classList.add('incorrecta');
+          }
+        });
     }
 
     setAnswer() {
-        if (this.form.get('answerRadio').value !== '') {
+        if (String(this.form.value.answers) !== String(["", "", "", "", "", "", "", "", "", ""])) {
             this.checkAnswer();
             this.scormStoreService.setResults(this.pregunta.id, this.answersChecked, this.result);
         } else {
