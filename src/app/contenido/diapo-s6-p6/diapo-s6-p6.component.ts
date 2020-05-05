@@ -27,7 +27,7 @@ export class DiapoS6P6Component implements OnInit {
         question: 'Per evitar la contaminació creuada:',
         answers: [
             'Evitar contacte entre aliments crus i cuinats.',
-            'Netejar les superfícies i útils després de cada us.',
+            'Netejar les superfícies i útils després de cada ús.',
             'Netejar mans després de manipular aliments crus.',
             'Netejar fruita i verdura amb aigua potable.',
             'Totes són correctes.',

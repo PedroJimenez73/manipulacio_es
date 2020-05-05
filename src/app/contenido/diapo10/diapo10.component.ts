@@ -23,8 +23,11 @@ export class Diapo10Component implements OnInit {
         },
     }
     doughnutChartColors = [];
+    mensaje: string;
+    timer: any;
     
-    constructor(private scormStoreService: ScormStoreService) { }
+    constructor(private scormStoreService: ScormStoreService) { 
+    }
 
     ngOnInit() {
         for (let i = 0; i < 3; i ++) {
@@ -37,8 +40,13 @@ export class Diapo10Component implements OnInit {
         });
         this.porcentAciertos = Math.round((this.totalAciertos / this.results.length) * 100);
         this.loadChartResultados();
+        if (this.porcentAciertos < 50) {
+			this.mensaje = 'Ho sentim, no has superat les activitats. Pots prémer en repassar per estudiar de nou i tornar a contestar les preguntes.';
+		} else if (this.porcentAciertos >= 50) {
+			this.mensaje = 'Enhorabona, has superat les activitats! Prem Següent per continuar.';
+		}
     }
-    
+
     loadChartResultados() {
         let resto = 100 - this.porcentAciertos;
         let color;
@@ -56,6 +64,10 @@ export class Diapo10Component implements OnInit {
                 backgroundColor: [ color, 'lightgrey'],
             },
         ];
+    }
+
+    reset() {
+        this.scormStoreService.resetUnit1();
     }
 
 }

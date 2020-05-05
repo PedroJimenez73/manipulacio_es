@@ -27,7 +27,7 @@ export class Diapo18Component implements OnInit {
         id: '6',
         question: 'Quins sectors de la población són més sensibles a patir T.I.A?',
         answers: [
-            'Nens, avuis i persones malaltes.',
+            'Nens, avis i persones malaltes.',
             'Persones del països menys desenvolupats.',
             'Persones obeses.'
         ],

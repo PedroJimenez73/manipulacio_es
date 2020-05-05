@@ -1,9 +1,10 @@
 .front {
     width: 100%;
     height: calc(100vh - 140px);
-    background-image: url('src/assets/img/portada.png');
+    background-image: url('src/assets/img/portada.jpg');
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
     @include flex(center, center);
 
     // .title {

@@ -28,7 +28,7 @@ export class DiapoS6P5Component implements OnInit {
             'Utensilis, superfícies i mans brutes del manipulador.',
             'L’aire.',
             'Els insectes.',
-            'Totes son correctes.',
+            'Totes són correctes.',
         ],
         corrects: ['a']
     }

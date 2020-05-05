@@ -24,20 +24,16 @@ export class DiapoS8P13Component implements OnInit {
 
     pregunta = {
         id: '16',
-        question: 'Indica quines indicacions del rentat de mans cal fer-les abans de:',
+        question: 'Cal rentar-se les mans abans de:',
         answers: [
             'anar al wàter',
             'inici de la jornada laboral',
             'contacte amb escombraries',
             'mocar-se, tocar mocador',
             'manipular aliments crus',
-            'manipulació d’aliments cuits',
-            'estossegar',
-            'contacte amb aliments crus',
-            'qualsevol interrupció en el treball si estem manipulant aliments',
-            'preparació d’aliments',
+            'manipulació d’aliments cuits'
         ],
-        corrects: ['','b','','','e','f','','','','j']
+        corrects: ['','b','','','e','f']
     }
 
     constructor(private ff: FormBuilder,
@@ -73,7 +69,6 @@ export class DiapoS8P13Component implements OnInit {
         } else {
             this.result = false;
         }
-        console.log(this.answersChecked, this.result, this.showMensaje);
         this.showMensaje = true;
         this.lockInput = true;
         this.cd.detectChanges();

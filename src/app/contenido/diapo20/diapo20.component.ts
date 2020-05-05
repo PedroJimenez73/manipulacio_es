@@ -24,6 +24,7 @@ export class Diapo20Component implements OnInit {
         },
     }
     doughnutChartColors = [];
+    mensaje: string;
     
     constructor(private scormStoreService: ScormStoreService) { }
 
@@ -38,6 +39,11 @@ export class Diapo20Component implements OnInit {
         });
         this.porcentAciertos = Math.round((this.totalAciertos / this.results.length) * 100);
         this.loadChartResultados();
+        if (this.porcentAciertos < 50) {
+			this.mensaje = 'Ho sentim, no has superat les activitats. Pots prémer en repassar per estudiar de nou i tornar a contestar les preguntes.';
+		} else if (this.porcentAciertos >= 50) {
+			this.mensaje = 'Enhorabona, has superat les activitats! Prem Següent per continuar.';
+		}
     }
     
     loadChartResultados() {
@@ -57,5 +63,9 @@ export class Diapo20Component implements OnInit {
                 backgroundColor: [ color, 'lightgrey'],
             },
         ];
+    }
+
+    reset() {
+        this.scormStoreService.resetUnit2();
     }
 }

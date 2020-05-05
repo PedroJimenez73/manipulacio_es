@@ -31,13 +31,9 @@ export class Diapo33Component implements OnInit {
             'PH ADEQUAT',
             'ALTRES MICROORGANISMES',
             'AIGUA',
-            'FRED',
-            'TEMPS',
-            'INSECTES',
-            'OXIGEN',
-            'TEMPERATURA IDÒNEA'
+            'FRED'
         ],
-        corrects: ['a','','c','','e','','g','','i','j']
+        corrects: ['a','','c','','e','']
     }
 
     constructor(private ff: FormBuilder,

@@ -26,7 +26,7 @@ export class DiapoS9P13Component implements OnInit {
         question: 'Què son les APPCC:',
         answers: [
             'Un sistema de control que utilitzen els inspectors per saber si les empreses compleixen la normativa vigent.',
-            'És un sistema d’anàlisi de perills i punts crítics de les empreses que permet minimitzar els perills (per mantenir la seguretat dels aliments), basat en mesures preventives.',
+            'És un sistema d’anàlisi de perills i punts crítics que aplica cada treballador.',
             'És un sistema d’anàlisis de llocs de l’empresa que poden estar contaminats.'
         ],
         corrects: ['a']
