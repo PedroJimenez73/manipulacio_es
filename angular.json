@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "cisco01": {
+    "manipulEs": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/cisco01",
+            "outputPath": "dist/manipulEs",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -73,18 +73,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "cisco01:build"
+            "browserTarget": "manipulEs:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "cisco01:build:production"
+              "browserTarget": "manipulEs:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "cisco01:build"
+            "browserTarget": "manipulEs:build"
           }
         },
         "test": {
@@ -121,15 +121,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "cisco01:serve"
+            "devServerTarget": "manipulEs:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "cisco01:serve:production"
+              "devServerTarget": "manipulEs:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "cisco01"
+  "defaultProject": "manipulEs"
 }
