@@ -24,6 +24,7 @@ export class Diapo60Component implements OnInit {
     }
     doughnutChartColors = [];
     mensaje: string;
+    pass = false;
     
     constructor(private scormStoreService: ScormStoreService) { }
 
@@ -41,6 +42,7 @@ export class Diapo60Component implements OnInit {
         if (this.porcentAciertos < 50) {
 			this.mensaje = 'Ho sentim, no has superat les activitats. Pots prémer en repassar per estudiar de nou i tornar a contestar les preguntes.';
 		} else if (this.porcentAciertos >= 50) {
+            this.pass = true;
 			this.mensaje = 'Enhorabona, has superat les activitats! Prem Següent per continuar.';
 		}
     }

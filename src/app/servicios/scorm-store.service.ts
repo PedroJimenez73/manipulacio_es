@@ -14,7 +14,7 @@ class result  {
 export class ScormStoreService {
 
     diapos = [
-        {text:"MANIPULADOR D'ALIMENTS",class:"front-page", menu: false, question: false, page: null},
+        {text:"MANIPULACIÓ D'ALIMENTS",class:"front-page", menu: false, question: false, page: null},
         {text:"ÍNDEX",class:"regular", menu: true, question: false, page: null},
         {text:"PRESENTACIÓ",class:"regular", menu: true, question: false, page: null},
         {text:"PRESENTACIÓ (II)",class:"regular", menu: false, question: false, page: null},
@@ -148,10 +148,6 @@ export class ScormStoreService {
             }
         });
         setTimeout(()=> {
-            if(window.ScormProcessGetValue("cmi.core.lesson_location", false)){
-                this.indexPantalla = window.ScormProcessGetValue("cmi.core.lesson_location", false);
-                this.navTo(this.indexPantalla);
-            }
             if (window.ScormProcessGetValue("cmi.suspend_data")) {
                 this.cmiStore = JSON.parse(window.ScormProcessGetValue("cmi.suspend_data"));
                 this.progress = this.cmiStore.progress;
@@ -162,6 +158,11 @@ export class ScormStoreService {
                     results: this.results
                 }
             }
+            if(window.ScormProcessGetValue("cmi.core.lesson_location", false)){
+                this.indexPantalla = window.ScormProcessGetValue("cmi.core.lesson_location", false);
+                this.navTo(this.indexPantalla);
+            }
+
         }, 750);
     }
 

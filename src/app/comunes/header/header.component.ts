@@ -1,5 +1,4 @@
 import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
-import { PantallasService } from 'src/app/servicios/pantallas.service';
 import { Subscription } from 'rxjs';
 import { ScormStoreService } from 'src/app/servicios/scorm-store.service';
 
@@ -30,9 +29,11 @@ export class HeaderComponent implements OnInit {
                                         this.menu = data.menu.filter(elem => elem.menu === true);
                                         this.item = data.menu[data.currentPantalla];
                                         let progress = data.progress;
-                                        this.menu.forEach((element) => {
-                                            element.learned = progress[element.page][2]  
-                                        });
+                                        setTimeout(()=>{
+                                            this.menu.forEach((element) => {
+                                                element.learned = progress[element.page][2]  
+                                            });
+                                        }, 800)
                                     },
                                     (error:any) => {console.log(error)
                                 });

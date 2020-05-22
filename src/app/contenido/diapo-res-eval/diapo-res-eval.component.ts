@@ -24,6 +24,7 @@ export class DiapoResEvalComponent implements OnInit {
     }
     doughnutChartColors = [];
     mensaje: string;
+    pass = false;
     
     constructor(private scormStoreService: ScormStoreService) { }
 
@@ -41,9 +42,11 @@ export class DiapoResEvalComponent implements OnInit {
         if (this.totalAciertos < (this.results.length * 0.5)) {
 			this.mensaje = 'Ho sentim, no has superat les activitats. Pots prémer en repassar per estudiar de nou i tornar a contestar les preguntes o prémer en sortir per finalitzar.';
 		} else if (this.totalAciertos >= (this.results.length * 0.5) && this.totalAciertos < this.results.length) {
-			this.mensaje = 'Has superat les activitats però pots millorar el resultat. Pots prémer en repassar per estudiar de nou i tornar a contestar les preguntes o prémer en sortir per finalitzar.';
+			this.pass = true;
+            this.mensaje = 'Has superat les activitats però pots millorar el resultat. Pots prémer en repassar per estudiar de nou i tornar a contestar les preguntes o prémer en sortir per finalitzar.';
 		} else if (this.totalAciertos === this.results.length) {
-			this.mensaje = 'Enhorabona, has superat totes les activitats! Prem sortir per finalitzar.';
+			this.pass = true;
+            this.mensaje = 'Enhorabona, has superat totes les activitats! Prem sortir per finalitzar.';
 		}
     }
     
